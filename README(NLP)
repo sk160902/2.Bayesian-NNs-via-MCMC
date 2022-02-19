@@ -1,0 +1,7 @@
+Firstly the datasets module was imported from python library.
+Gathered information regarding all the datasets that were present and verified if the 'trec' dataset present among them.
+Loaded the 'trec' dataset into the colab.
+Since the dataset was in dictionary format use of pandas wasn't possible,hence had to iterate through the dictionary,appended it into an empty list and created a dataframe from it.
+Imported accuracy_score from sklearn.metrics module to note the performance achieved before and after mixup,the prformance achieved rose by 1% after mixup which implies that the model could be predicted more accurately with the mixup strategy in place.
+For augmenting sentences using discrete augmentation techniques: synonym  replacement:used the trained module nltk.corpus to import the wordnet library,defined a function,first to get synonyms of a particular word in that sentence then defined another function to replace the synonyms in that sentence. 
+word dropping: defined a function under 3 subparts following the given conditions: 1.) If there is only one word,keep it 2.) To randomly delete words with probability p and 3.)To return a random word if in case all words were deleted.
